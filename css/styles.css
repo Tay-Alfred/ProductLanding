@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: pink;
 }
 
 header {
@@ -11,11 +12,37 @@ header {
     z-index: 1000;
     background-color: #3c2f2f;
 }
-
-.logo {
-    height: 50px;
+.nav-link{
+    color: #f1c40f !important;
 }
-
+.nav-link:hover{
+    color: pink !important;
+    text-shadow: 2px 2px 3px #f1c40f;
+}
+.logo {
+    height: 70px;
+}
+.row{
+    margin-top: 40px;
+}
+#about{
+    background-color: wheat;
+    padding: 30px;
+    box-shadow: 3px 4px 25px 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+#features{
+    text-align: center;
+}
+.col-md-4{
+    background-color: wheat;
+    width:25%;
+    margin-right: 5%;
+    margin-left: 2%;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 3px 4px 25px 10px rgba(0, 0, 0, 0.7);
+}
 main {
     padding-top: 80px;
 }
@@ -65,11 +92,14 @@ section {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 3px;
+  background-color: wheat;
+  box-shadow: 3px 4px 25px 10px rgba(0, 0, 0, 0.7) ;
 }
 
 .product > .level {
-  background-color: #ddd;
+  background-color: #999;
   color: black;
+  text-shadow: 3px 2px 2px #f1c40f;
   padding: 15px 0;
   width: 100%;
   text-transform: uppercase;
@@ -99,7 +129,9 @@ section {
   background-color: orange;
   transition: background-color 1s;
 }
-
+.select{
+    width: 80px;
+}
 @media (max-width: 800px) {
   #pricing {
     flex-direction: column;
@@ -110,4 +142,35 @@ section {
     margin: 0 auto;
     margin-bottom: 10px;
   }
+}
+#contact{
+    border: 1px solid #000;
+    padding: 50px;
+    background-color: wheat;
+    box-shadow: 3px 4px 25px 10px rgba(0, 0, 0, 0.7);
+}
+#how-it-works{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#video{
+    box-shadow: 3px 4px 25px 10px rgba(0, 0, 0, 0.7) ;
+    margin-left: 40px;
+}
+.image{
+    box-shadow: 3px 4px 15px 5px rgba(0, 0, 0, 0.7) ;
+}
+#email{
+    background-color: #f1c40f;
+}
+#submit{
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+}
+#submit:hover{
+    background-color: #3c2f2f;
+    color: #f1c40f;
+    box-shadow: 1px 2px 3px #f1c40f;
+    transition: background-color 1s;
 }
